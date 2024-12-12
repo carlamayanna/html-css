@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Alimentos </title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+     <style>
+         body {
+             font-family: Arial, sans-serif;
+             margin: 0;
+             padding: 0;
+             background-color: #f4f4f9;
+             color: #333;
+         }
+ 
+         header {
+             background-color: #4CAF50;
+             color: white;
+             padding: 20px 0;
+             text-align: center;
+         }
+ 
+         nav {
+             background-color: #333;
+             overflow: hidden;
+         }
+ 
+         nav a {
+             color: white;
+             text-decoration: none;
+             padding: 14px 20px;
+             display: inline-block;
+         }
+         nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .category {
+            margin-bottom: 40px;
+        }
+
+        .category h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        .food-item {
+            display: inline-block;
+            width: 22%;
+            margin: 1%;
+            text-align: center;
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .food-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .iframe-container {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        .offer-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .offer-link:hover {
+            background-color: #ff4500;
+        }
+    </style>
+         <h1>Catálogo de Alimentos</h1>
+        </header>
+    
+        <nav>
+            <a href="#">Início</a>
+            <a href="ofertas.html">Ofertas</a>
+            <a href="#">Sobre nós</a>
+            <a href="#">Contato</a>
+        </nav>
+    
+        <div class="content">
+            <section class="category">
+                <h2>Pratos Principais</h2>
+                <div class="food-item">
+                    <img src="pizza de calabresa.jpg" alt="">
+                    <img src="pizza.jpg" alt="Pizza">
+                </div>
+                <div class="food-item">
+                    <img src="hamburguer enorme.avif" alt="">
+                    <p>Hambúrguer Gourmet</p>
+                </div>
+                <div class="food-item">
+                    <img src="sushi.jpg" alt="Sushi">
+                    <p>Sushi de Salmão</p>
+                </div>
+                <div class="food-item">
+                    <img src="lasanha.jpg" alt="Lasanha">
+                    <p>Lasanha de Carne</p>
+                </div>
+            </section>
+    
+            <section class="category">
+                <h2>Sobremesas</h2>
+                <div class="food-item">
+                    <img src="bolo_chocolate.jpg" alt="Bolo de Chocolate">
+                    <p>Bolo de Chocolate</p>
+                </div>
+                <div class="food-item">
+                    <img src="pudim.jpg" alt="Pudim">
+                    <p>Pudim de Leite</p>
+                </div>
+                <div class="food-item">
+                    <img src="torta_limao.jpg" alt="Torta de Limão">
+                    <p>Torta de Limão</p>
+                </div>
+                <div class="food-item">
+                    <img src="sorvete.jpg" alt="Sorvete">
+                    <p>Sorvete de Chocolate</p>
+                </div>
+            </section>
+    
+            <section class="category">
+                <h2>Bebidas</h2>
+                <div class="food-item">
+                    <img src="suco.jpg" alt="Suco Natural">
+                    <p>Suco Natural de Laranja</p>
+                </div>
+                <div class="food-item">
+                    <img src="refrigerante.jpg" alt="Refrigerante">
+                    <p>Refrigerante Cola</p>
+                </div>
+                <div class="food-item">
+                    <img src="cocktail.jpg" alt="Coquetel">
+                    <p>Coquetel de Morango</p>
+                </div>
+                <div class="food-item">
+                    <img src="cafe.jpg" alt="Café">
+                    <p>Café Expresso</p>
+                </div>
+            </section>
+    
+            <section class="category">
+                <h2>Lanches</h2>
+                <div class="food-item">
+                    <img src="sandwich.jpg" alt="Sanduíche">
+                    <p>Sanduíche de Frango</p>
+                </div>
+                <div class="food-item">
+                    <img src="wrap.jpg" alt="Wrap">
+                    <p>Wrap de Atum</p>
+                </div>
+                <div class="food-item">
+                    <img src="chips.jpg" alt="Chips">
+                    <p>Chips de Batata</p>
+                </div>
+                <div class="food-item">
+                    <img src="taco.jpg" alt="Taco">
+                    <p>Taco Mexicano</p>
+                </div>
+            </section>
+    
+            <div class="iframe-container">
+                <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen></iframe>
+            </div>
+    
+            <a href="ofertas.html" class="offer-link">Confira nossas Ofertas</a>
+        </div>
+    
+        <footer>
+            <p>&copy; 2024 Catálogo de Alimentos. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+    </html>
+</head>
+<body>
+    <header>
+
+
+ 
+ 
